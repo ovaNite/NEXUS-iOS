@@ -1,0 +1,9 @@
+{
+  "portable_c_host_test": "PASS",
+  "stdout": "PASS: portable candidate C API, bounded output, kickoff front row and invalid snapshot rejection; Windows host only, no iOS physics or goal proof\n",
+  "host": "Windows x64 gcc",
+  "swift_compiled": false,
+  "xcode_compiled": false,
+  "ios_tested": false,
+  "native_goal_proof": false
+}

@@ -1,0 +1,34 @@
+name: NEXUS iOS source validation
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  ios:
+    if: ${{ !github.event.repository.private }}
+    runs-on: macos-15
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Confirm genuine Apple toolchain
+        run: |
+          sw_vers
+          xcodebuild -version
+          xcrun --sdk iphonesimulator --show-sdk-path
+          xcrun simctl list runtimes
+      - name: Test portable core on macOS
+        run: swift test --package-path iOS
+      - name: Test native planner on macOS
+        run: |
+          clang -std=c11 -O2 -I iOS/Sources/CNexusPlanner/include iOS/Sources/CNexusPlanner/Planner.c iOS/Validation/planner-smoke.c -lm -o "$RUNNER_TEMP/planner-smoke"
+          "$RUNNER_TEMP/planner-smoke"
+      - name: Compile libraries for the iOS Simulator
+        run: |
+          SDK="$(xcrun --sdk iphonesimulator --show-sdk-path)"
+          swift build --package-path iOS --scratch-path "$RUNNER_TEMP/nexus-ios-build" --triple arm64-apple-ios16.0-simulator --sdk "$SDK"
+      - name: State remaining integration requirements
+        if: always()
+        run: |
+          printf '%s\n' 'This validates source libraries only. No SoccerStars game adapter, app executable, IPA or Apple signing is supplied.' >> "$GITHUB_STEP_SUMMARY"

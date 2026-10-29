@@ -1,0 +1,8 @@
+{
+  "status": "prepared-not-dispatched",
+  "provider": "GitHub Actions",
+  "runner": "macos-15",
+  "repoRequired": true,
+  "publicSourceApprovalRequired": true,
+  "ipaProduced": false
+}

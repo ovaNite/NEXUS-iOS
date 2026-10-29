@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "platform": "Windows C host only",
+  "output": "PASS: portable candidate C API, bounded output, kickoff front row and invalid snapshot rejection; Windows host only, no iOS physics or goal proof\n",
+  "ios_build_verified": false,
+  "installable_ipa": false
+}

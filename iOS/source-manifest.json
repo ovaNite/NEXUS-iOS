@@ -1,0 +1,20 @@
+{
+  "source_revision": 93,
+  "status": "source-preparation-only",
+  "iosAvailable": false,
+  "swift_compiled": false,
+  "ios_game_adapter": "missing",
+  "mac_build_environment": "GitHub Actions macos-15 workflow prepared; not run",
+  "apple_signing": "unavailable",
+  "c_host_test": "PASS",
+  "files": {
+    "Sources\\CNexusPlanner\\Planner.c": "24a71254fc4cac8028053bc6b13801e85e493da64fefa54365cb02cae3fccc33",
+    "Sources\\CNexusPlanner\\planner.inc": "edbe665dc51ec41529ca03bc71336950a46eac09b46399c2d02165c3b61c098a",
+    "Sources\\CNexusPlanner\\post_routes_r75.inc": "361ad7b82fa4ff4d2b70d52546adcd23009a6496193ea2e12602ca08f9a7c5d4",
+    "Sources\\CNexusPlanner\\situational_routes_r72.inc": "c0f39080d5803ac606c7fa628508c69fbb96e783f1f1da867ec1ee26ea231de0",
+    "Sources\\CNexusPlanner\\video_routes_r74.inc": "bd2ff2cf020aa21dee5b4bba48e31f48e2a744641ddc8c32a3f7463c8e5f587b",
+    "Sources\\NexusControls\\NexusControls.swift": "ad33a5cc84cf3c0af2d9f7048f7bd56ffeab45a80a7487872bd42fa83f9fef1e",
+    "Sources\\NexusCore\\Automation.swift": "abd001369c133c06c7d17af9b14b8bcb5c193983bc9557314a1b5462dfa5afae",
+    "Sources\\CNexusPlanner\\include\\NexusPlanner.h": "9f5f861571e63461c48f0b8175e3e7dec53ea1de44c020511a9281ad48562df5"
+  }
+}

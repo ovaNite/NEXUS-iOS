@@ -1,0 +1,9 @@
+.DS_Store
+.build/
+.swiftpm/
+DerivedData/
+*.p12
+*.p8
+*.mobileprovision
+*.dpapi
+.env*
