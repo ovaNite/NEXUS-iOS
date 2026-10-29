@@ -2,9 +2,9 @@
   "source_revision": 93,
   "status": "source-preparation-only",
   "iosAvailable": false,
-  "swift_compiled": false,
+  "swift_compiled": true,
   "ios_game_adapter": "missing",
-  "mac_build_environment": "GitHub Actions macos-15 workflow prepared; not run",
+  "mac_build_environment": "GitHub Actions macos-15-arm64; verified",
   "apple_signing": "unavailable",
   "c_host_test": "PASS",
   "files": {
@@ -16,5 +16,9 @@
     "Sources\\NexusControls\\NexusControls.swift": "ad33a5cc84cf3c0af2d9f7048f7bd56ffeab45a80a7487872bd42fa83f9fef1e",
     "Sources\\NexusCore\\Automation.swift": "abd001369c133c06c7d17af9b14b8bcb5c193983bc9557314a1b5462dfa5afae",
     "Sources\\CNexusPlanner\\include\\NexusPlanner.h": "9f5f861571e63461c48f0b8175e3e7dec53ea1de44c020511a9281ad48562df5"
-  }
+  },
+  "ios_simulator_compiled": true,
+  "ios_simulator_runtime_tested": false,
+  "validation_commit": "956fda8a09eaf64b798b3c51658c166d86ec3dc8",
+  "validation_run": "https://github.com/ovaNite/NEXUS-iOS/actions/runs/40940981140"
 }

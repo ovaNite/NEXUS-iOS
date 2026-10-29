@@ -1,11 +1,9 @@
-# NEXUS iOS source preparation, aligned with Android r93
+# NEXUS iOS source package
 
-THIS IS NOT AN INSTALLABLE IPA. iOS availability remains false.
+Portable planner source aligned with Android r93. This is a library package, not an installable IPA.
 
-Shared candidate-planner source files were refreshed from the current r93 main source and passed the existing Windows C host smoke test. This does not include Android-native game hooks, full bot equivalence, MSAA/GL logo port, game shader, rewards, Facebook integration or a verified iOS game adapter. A shot proposal is not proof of a goal.
+Verified on a genuine macOS 15.7.9 ARM64 GitHub runner with Xcode 16.4: two Swift tests passed, C planner host smoke test passed, and all three targets compiled for the ARM64 iOS Simulator using the iOS 18.5 SDK. See the root README and cloud-status.json for the validated commit and run URL.
 
-The supplied Swift package remains source preparation. No Swift/Xcode toolchain or connected Mac is available here. No iOS game project, source integration or IPA was found. Apple build, signing, device testing and distribution remain blocked on those actual resources. No Apple credentials or signing keys are included. No website download is marked as available.
+No simulator app was launched. Real game adapter, app target, Apple signing and device gameplay testing remain missing. Android-specific hooks, rewards, Facebook integration, graphics and input are not supplied. Candidate generation does not prove native physics or scoring accuracy.
 
-On a Mac: swift test in this directory validates the package when the toolchain is available. Embed the package into the authorized game project and implement NexusGameAdapter against the real iOS physics/turn/input interfaces. An app must then be archived, signed and tested using Xcode. The Android signing key cannot sign an iOS app.
-
-Official Apple documentation: https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution
+Implement NexusGameAdapter in an authorized iOS game project against actual game physics, turn and input interfaces, then archive, sign and test that application. The Android key cannot sign an iOS app.

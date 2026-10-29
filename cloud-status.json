@@ -1,8 +1,24 @@
 {
-  "status": "prepared-not-dispatched",
+  "status": "source-validation-passed",
   "provider": "GitHub Actions",
-  "runner": "macos-15",
-  "repoRequired": true,
-  "publicSourceApprovalRequired": true,
-  "ipaProduced": false
+  "repository": "https://github.com/ovaNite/NEXUS-iOS",
+  "runner": "macos-15-arm64",
+  "macOS": "15.7.9",
+  "xcode": "16.4 (16F6)",
+  "sdk": "iPhoneSimulator18.5",
+  "validatedCommit": "956fda8a09eaf64b798b3c51658c166d86ec3dc8",
+  "workflowRun": "https://github.com/ovaNite/NEXUS-iOS/actions/runs/40940981140",
+  "jobID": 123683999052,
+  "swiftTests": {
+    "passed": 2,
+    "failed": 0,
+    "platform": "macOS"
+  },
+  "nativePlannerHostTest": "PASS on macOS",
+  "iosSimulatorLibraries": "COMPILE PASS (arm64-apple-ios16.0-simulator)",
+  "simulatorRuntimeTest": false,
+  "iosGameAdapter": "missing",
+  "appleSigning": "unavailable",
+  "ipaProduced": false,
+  "iosAvailable": false
 }
